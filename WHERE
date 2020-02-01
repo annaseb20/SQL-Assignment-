@@ -1,1 +1,19 @@
-SELECT * FROM `bigquery-public-data.census_bureau_acs.blockgroup_2010_5yr` WHERE total_pop< 1000;
+List 10 rape crimes in the year 2016 
+Command;
+SELECT * FROM `bigquery-public-data.austin_crime.crime` 
+WHERE primary_type = "Rape" and year = 2016
+Limit 10
+
+Result;
+unique_key	address	census_tract	clearance_date	clearance_status	council_district_code	description	district	latitude	longitude	location	location_description	primary_type	timestamp	x_coordinate	y_coordinate	year	zipcode
+20165002898	"Austin, TX"		2016-03-14 00:00:00 UTC	Not cleared		"RAPE                          "	UK					Rape	2016-01-19 00:00:00 UTC			2016	
+20165004843	"Austin, TX"		2016-03-31 00:00:00 UTC	Not cleared		"RAPE                          "	UK					Rape	2016-01-25 00:00:00 UTC			2016	
+2016250988	"Austin, TX"		2016-09-16 00:00:00 UTC	Not cleared		"RAPE                          "	UK					Rape	2016-01-25 00:00:00 UTC			2016	
+20165003839	"Austin, TX"		2016-02-09 00:00:00 UTC	Not cleared		"AGG RAPE OF A CHILD           "	UK					Rape	2016-01-27 00:00:00 UTC			2016	
+2016321746	"Austin, TX"		2016-03-22 00:00:00 UTC	Not cleared		"RAPE OF A CHILD               "	UK					Rape	2016-02-01 00:00:00 UTC			2016	
+20165010113	"Austin, TX"		2016-04-12 00:00:00 UTC	Not cleared		"SEXUAL ASSAULT W/ OBJECT      "	UK					Rape	2016-02-25 00:00:00 UTC			2016	
+20165009799	"Austin, TX"		2016-03-24 00:00:00 UTC	Cleared by Exception		"RAPE OF A CHILD               "	UK					Rape	2016-03-07 00:00:00 UTC			2016	
+2016701037	"Austin, TX"		2016-05-04 00:00:00 UTC	Not cleared		"RAPE                          "	UK					Rape	2016-03-10 00:00:00 UTC			2016	
+2016771324	"Austin, TX"		2016-04-20 00:00:00 UTC	Not cleared		"RAPE                          "	UK					Rape	2016-03-17 00:00:00 UTC			2016	
+20165012445	"Austin, TX"		2016-05-20 00:00:00 UTC	Not cleared		"RAPE OF A CHILD               "	UK					Rape	2016-03-24 00:00:00 UTC			2016	
+
